@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.header__container {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}

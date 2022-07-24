@@ -1,0 +1,58 @@
+.social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50% 50%;
+}
+
+.social-networks__link {
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50% 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .social-networks__icon {
+        fill: var(--footer-text-color);
+    }
+
+    &:focus .social-networks__icon {
+        fill: var(--footer-text-color);
+    }
+}
+
+.social-networks__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--icon-color);
+}
+
+.social-networks__link--bg-color {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+        background-color: var(--accent-color);
+    }
+
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.social-networks__icon-white {
+    fill: var(--footer-text-color);
+}

@@ -1,0 +1,20 @@
+.logo {
+    color: var(--logo-color);
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo__header--blue {
+    color: var(--accent-color);
+}
+
+.logo__footer {
+    display: block;
+    padding-bottom: 20px;
+    color: var(--footer-text-color);
+}
+
+.logo__footer--white {
+    color: var(--accent-color);
+}

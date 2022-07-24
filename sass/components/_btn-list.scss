@@ -1,0 +1,9 @@
+.btn__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn__item+.btn__item {
+    margin-left: 8px;
+}
