@@ -1,6 +1,9 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 100px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+            padding-bottom: 100px;
+    }
+    
 }
 
 .client__title {
@@ -8,9 +11,11 @@
 }
 
 .client__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
 }
 
 .client__item {

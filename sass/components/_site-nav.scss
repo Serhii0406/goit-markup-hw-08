@@ -1,9 +1,13 @@
 .site-nav {
     display: flex;
     margin: 0;
-    margin-left: 93px;
+   
     padding: 0;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;        
+    }
 }
 
 .site-nav__item {
