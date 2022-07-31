@@ -11,8 +11,13 @@
 
 .logo__footer {
     display: block;
+    text-align: center;
     padding-bottom: 20px;
     color: var(--footer-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;        
+    }
 }
 
 .logo__footer--white {

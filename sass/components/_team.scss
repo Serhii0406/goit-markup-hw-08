@@ -1,6 +1,8 @@
 .team {
     background-color: var(--sec-studio-btn-bgc);
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -15,6 +17,11 @@
 .team__list {
     @media screen and (min-width: 768px) {
             display: flex;
+            flex-wrap: wrap;
+        }
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
         }
     
     margin-left: auto;

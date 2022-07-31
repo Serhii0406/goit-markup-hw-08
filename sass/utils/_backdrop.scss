@@ -8,4 +8,5 @@
     background-color: rgba(0, 0, 0, 0.2);
     transform: scale(1);
     transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+    overflow-y: scroll;
 }

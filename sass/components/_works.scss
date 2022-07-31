@@ -1,8 +1,8 @@
 .works {
-    display: none;
+    display: block;
 
-    @media screen and (min-width: 1200px) {
-        display: block;        
+    @media screen and (max-width: 1199px) {
+        display: none;        
     }
     .works__title {
             margin-bottom: 50px;
