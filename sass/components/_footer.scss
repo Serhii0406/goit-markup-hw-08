@@ -14,11 +14,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    @media screen and (min-width: 1200px) {
         align-items: baseline;
     }
-    
+        
 }
 .footer__address {
     color: var(--footer-text-color);

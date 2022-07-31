@@ -6,21 +6,101 @@
     border-bottom: 1px solid #ECECEC;
 
 }
+.header_logo {
+    display: block;
+    margin: 15px 16px;
+    width: 134px;
 
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 15px;
+        }
+}
 .header__container {
+    margin: 0;
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
     }
-    
-    margin: 0;   
-
 }
-
-.header-content {
+.header_modile-menu {
+    display: block;
+          
+    @media screen and (min-width: 767px) {
+        display: none;
+    }    
+}
+.header_desktop-menu {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+}
+.header_content {
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        }
-    
+    }
+}
+.header_mobile-content {
+    display: none;
+    padding-top: 48px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary-bgc-color);
+    z-index: 1;
+    &.is-open {
+        display: flex;
+    }    
+}
+
+.header_menu-button {
+    display: inline-flex;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 11px;
+    right: 23px;
+    z-index: 2;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+.header_menu-button .header_icon-close {
+    display: none;
+}
+.header_menu-button.is-open .header_icon-close {
+    display: block;
+}
+.header_menu-button.is-open .header_icon-menu {
+    display: none;
+}
+
+.header_social {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: row;
+    padding-bottom: 48px;
+    & span {
+        color: rgba(33, 33, 33, 0.2);;
+    }
+}
+.header_social-link {
+    font-weight: var(--secondary-font-weight);
+
+    color: var(--accent-color);
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+    margin-right: 10px;
 }
