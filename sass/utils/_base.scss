@@ -22,7 +22,8 @@ a:link {
 
 .container {
     min-width: 320px;
-    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 480px;
     margin: 0 auto;
 
@@ -32,6 +33,5 @@ a:link {
 
     @media screen and (min-width: 1200px) {
             max-width: 1200px;
-    }
-    
+    }    
 }

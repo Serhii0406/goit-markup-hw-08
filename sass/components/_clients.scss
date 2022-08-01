@@ -33,7 +33,7 @@
 .client__link {
     box-sizing: border-box;
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,12 @@
 
     &:hover {
         border: 1px solid var(--accent-color);
+    }
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 

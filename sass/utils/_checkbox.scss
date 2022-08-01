@@ -56,12 +56,13 @@
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: var(--primary-font-weight);
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 
     @media screen and (min-width: 1200px) {
         line-height: 1.71;
+        font-size: 14px;
     }
 }

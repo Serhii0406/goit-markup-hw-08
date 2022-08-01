@@ -6,11 +6,16 @@
     display: flex;
     flex-wrap: wrap;
     background-color: var(--primary-bgc-color);
+    margin-bottom: 30px;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .card__item {
     position: relative;
-    margin-left: 15px;
     margin-bottom: 30px;
     
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,9 +28,8 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 30px;
+        }
+    @media screen and (min-width: 1200px) {        
         width: 370px;
 
         &:nth-last-of-type(-n+3) {
