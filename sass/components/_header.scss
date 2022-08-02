@@ -91,6 +91,9 @@
 .header_menu-button.is-open .header_icon-menu {
     display: none;
 }
+.header_menu-button.is-open {
+    position: fixed;
+}
 
 .header_social {
     display: flex;
