@@ -13,7 +13,7 @@
     display: block;
     margin-top: 16px;
     margin-bottom: 16px;
-    width: 134px;    
+    max-width: 134px;    
 }
 .header__container {
     margin: 0;
@@ -77,6 +77,9 @@
     right: 23px;
     z-index: 2;
     
+    &.is-open {
+        position: fixed;
+    }
     &:hover,
     &:focus {
         fill: var(--accent-color);
@@ -90,9 +93,6 @@
 }
 .header_menu-button.is-open .header_icon-menu {
     display: none;
-}
-.header_menu-button.is-open {
-    position: fixed;
 }
 
 .header_social {

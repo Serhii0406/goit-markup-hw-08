@@ -1,5 +1,6 @@
 .benefits {
     padding-top: 60px;
+    padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 89px;
@@ -10,11 +11,9 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            
+            gap: 30px;
 
-            @media screen and (min-width: 768px) {
-                gap: 30px;
-
-            }
             @media screen and (min-width: 1200px) {
                 flex-wrap: nowrap;
                 
@@ -33,7 +32,6 @@
                 width: 270px;                
             }
             
-            margin-bottom: 30px;
         }
     
         &__box {

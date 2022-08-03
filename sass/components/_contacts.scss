@@ -4,15 +4,19 @@
     margin-left: 40px;
     align-items: start;
     flex-direction: column;
-    margin-top: auto;
+   
     margin-bottom: 32px;
 
+    @media screen and (max-width: 767px) {
+        margin-top: auto;
+    }
+
     @media screen and (min-width: 768px) {
-        margin-left: 80px;
+        margin-left: 64px;
         margin-top: 0;
         margin-bottom: 0;
         margin-right: 0;
-        padding-top: 32px;
+        padding-top: 21px;
     
     }
     @media screen and (min-width: 1200px) {
@@ -22,14 +26,21 @@
 }
 
 .contacts__item {
-    margin-bottom: 32px;
+    
 
     @media screen and (min-width: 768px) {
-            margin-right: 30px;
             margin-bottom: 10px;
+            
+    
             &:nth-last-child(1) {
-                    margin-right: 0;
-                }
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+
+    @media screen and (min-width: 1200px) {
+            margin-right: 30px;
+            
         }
     
     &:hover {
@@ -57,7 +68,7 @@
     @media screen and (min-width: 768px) {
         font-size: 12px;        
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;        
     }
 }
