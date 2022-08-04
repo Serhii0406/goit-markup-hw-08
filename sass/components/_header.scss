@@ -16,15 +16,11 @@
     max-width: 134px;    
 }
 .header__container {
-    margin: 0;
     
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+        min-width: 480px;
+    }       
 }
 .header_modile-menu {
     display: block;
@@ -74,7 +70,7 @@
     background-color: transparent;
     position: absolute;
     top: 11px;
-    right: 23px;
+    right: 0;
     z-index: 2;
     
     &.is-open {
